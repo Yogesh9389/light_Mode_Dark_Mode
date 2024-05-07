@@ -37,10 +37,12 @@ function lightMode() {
 function switchTheme(event) {
     if(event.target.checked) {
         document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('data-theme', 'dark');
         darkMode();
     }
     else {
         document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('data-theme', 'light');
         lightMode();
     }
 }
@@ -49,3 +51,16 @@ function switchTheme(event) {
 // Event Listner
 
 toggleSwitch.addEventListener('change', switchTheme);
+
+//  Check Local Storage for theme
+
+const currentTheme = localStorage.getItem('data-theme');
+if(currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+    if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+        darkMode();
+    }
+}
+
+
