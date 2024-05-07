@@ -1,6 +1,6 @@
 # Light Mode-Dark Mode Website
 
-visit the <a href="https://yogesh9389.github.io/light_Mode_Dark_Mode/">Link</a>
+visit the <a href="https://yogesh9389.github.io/light_Mode_Dark_Mode/" target="_blank">Link</a>
 
 This is a website that supports both light mode and dark mode, providing users with a choice for their preferred viewing experience.
 
